@@ -50,7 +50,7 @@
       <file leaf-file-name="StationRepository.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="17" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.5973451" vertical-offset="420" max-vertical-offset="1380">
+            <state line="51" column="39" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.50884956" vertical-offset="420" max-vertical-offset="1380">
               <folding>
                 <element signature="e#42#90#0" expanded="true" />
               </folding>
@@ -1128,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.5973451" vertical-offset="420" max-vertical-offset="1380">
+        <state line="51" column="39" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.50884956" vertical-offset="420" max-vertical-offset="1380">
           <folding>
             <element signature="e#42#90#0" expanded="true" />
           </folding>

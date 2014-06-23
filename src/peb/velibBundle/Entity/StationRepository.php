@@ -49,11 +49,11 @@ class StationRepository extends EntityRepository
          for($i=0;$i<1440;$i=$i+5){
              $beforeAverage[$i]=array();
 
-             for($j=0;$j<sizeof($infos) && $infos[$j]!=null;$j++){
+             for($j=0;$j<sizeof($infos);$j++){
                  if($infos[$j]==null){
                      continue;
                  }
-                 
+
                  $info = $infos[$j];
                  $tmp = $info['hour']*60+$info['minute']*1;
 
