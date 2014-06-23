@@ -50,6 +50,10 @@ class StationRepository extends EntityRepository
              $beforeAverage[$i]=array();
 
              for($j=0;$j<sizeof($infos) && $infos[$j]!=null;$j++){
+                 if($infos[$j]==null){
+                     continue;
+                 }
+                 
                  $info = $infos[$j];
                  $tmp = $info['hour']*60+$info['minute']*1;
 
@@ -72,7 +76,7 @@ class StationRepository extends EntityRepository
                 }
 
                 $average = $average/sizeof($beforeAverage[$i]);
-                unset($beforeAverage[$i]);
+                //unset($beforeAverage[$i]);
             }
             $result[$i] = $average;
         }

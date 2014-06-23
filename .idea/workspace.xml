@@ -47,22 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StationRepository.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StationRepository.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="-9.5" vertical-offset="462" max-vertical-offset="1320">
+            <state line="55" column="17" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.5973451" vertical-offset="420" max-vertical-offset="1380">
               <folding>
                 <element signature="e#42#90#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="193" selection-end="193" vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="702">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,9 +160,9 @@
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/src/peb/velibBundle/Tests/Repository/StationRepositoryTest.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php" />
         <option value="$PROJECT_DIR$/src/peb/velibBundle/Controller/ApiController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php" />
       </list>
     </option>
   </component>
@@ -1121,15 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1305" selection-end="1305" vertical-scroll-proportion="-9.5" vertical-offset="462" max-vertical-offset="1320">
-          <folding>
-            <element signature="e#42#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Controller/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="8" selection-start="966" selection-end="966" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="540">
@@ -1141,6 +1123,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="6" selection-start="193" selection-end="193" vertical-scroll-proportion="0.2777778" vertical-offset="0" max-vertical-offset="702">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="17" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.5973451" vertical-offset="420" max-vertical-offset="1380">
+          <folding>
+            <element signature="e#42#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
