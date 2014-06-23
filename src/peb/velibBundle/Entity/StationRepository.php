@@ -2,6 +2,7 @@
 
 namespace peb\velibBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\ResultSetMapping;
 use Symfony\Component\Validator\Constraints\DateTime;
@@ -47,12 +48,17 @@ class StationRepository extends EntityRepository
         $beforeAverage = array();
          for($i=0;$i<1440;$i=$i+5){
              $beforeAverage[$i]=array();
-             foreach($infos as $info){
+
+             for($j=0;$j<sizeof($infos) && $infos[$j]!=null;$j++){
+                 $info = $infos[$j];
                  $tmp = $info['hour']*60+$info['minute']*1;
 
                  if($tmp>=$i&&$tmp<$i+5){
                     $beforeAverage[$i][] = $info['average'];
+                    $infos[$j]=null;
                  }
+
+
              }
          }
 
@@ -64,7 +70,9 @@ class StationRepository extends EntityRepository
                     $value = $beforeAverage[$i][$j];
                     $average += $value;
                 }
-                //$average = $average/sizeof($beforeAverage[$i]);
+
+                $average = $average/sizeof($beforeAverage[$i]);
+                unset($beforeAverage[$i]);
             }
             $result[$i] = $average;
         }

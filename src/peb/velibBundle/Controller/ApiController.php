@@ -30,6 +30,10 @@ class ApiController extends Controller{
      * @Route(path="/api/stations/{number}/stats")
      */
     public function getStationsStats(Request $request, $number){
-        return new JsonResponse($this->get('pebvelib.api')->getStationsStats($number));
+        $response = new JsonResponse($this->get('pebvelib.api')->getStationsStats($number));
+
+        $response->setMaxAge(86400);
+
+        return $response;
     }
 } 
