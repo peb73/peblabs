@@ -1,0 +1,5 @@
+pebvelib:
+    resource: "@pebvelibBundle/Controller/"
+    type:     annotation
+    prefix:   /velib
+

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Velib interface</title>
+
+        <!-- --------------- -->
+        <!--        CSS      -->
+        <!-- --------------- -->
+        {% stylesheets 'bundles/pebvelib/css/*'
+            filter='cssrewrite'
+            output="css/compiled/velib.css"
+        %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+        {% javascripts
+            '@pebvelibBundle/Resources/public/vendor/jquery-1.11.1.min.js'
+            '@pebvelibBundle/Resources/public/vendor/fusioncharts/js/fusioncharts.js'
+            '@pebvelibBundle/Resources/public/vendor/fusioncharts/js/fusioncharts.charts.js'
+            '@pebvelibBundle/Resources/public/vendor/fusioncharts/FusionCharts.jqueryplugin.js'
+        %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+    </head>
+    <body>
+        <header>
+            {{ include('pebvelibBundle:Dashboard:menu.html.twig', {'type': type}) }}
+        </header>
+
+        {% block body %}
+        {% endblock %}
+
+        <!-- --------------- -->
+        <!--    Javascript   -->
+        <!-- --------------- -->
+        {% block javascript %}
+        {% endblock %}
+
+    </body>
+</html>

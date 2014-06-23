@@ -1,0 +1,7 @@
+<div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+    <a href="{{ path('peb_velib_default_index')}}" class="pure-menu-heading">Velib</a>
+    <ul>
+        <li {%  if type == 0 %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_velib_default_home') }}">Maison</a></li>
+        <li {%  if type == 1 %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_velib_default_work') }}">Boulot</a></li>
+    </ul>
+</div>

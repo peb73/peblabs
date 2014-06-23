@@ -1,0 +1,53 @@
+{% extends 'pebvelibBundle:Dashboard:layout.html.twig' %}
+
+{% block body %}
+    <div class="pure-g dayPart">
+        <ul class="pure-u-1-2 stations">
+            {% for station in stations %}
+                {{ include('pebvelibBundle:Dashboard:station.html.twig', {'station':station}) }}
+            {% endfor %}
+        </ul>
+        <div class="pure-u-1-2 map">
+            <div id="map-canvas" class="map-canvas">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key={{ googleApiKey }}">
+    </script>
+
+    <script type="text/javascript">
+        var googleMarker = {
+            'success': "{{ asset('bundles/pebvelib/img/velib-success-25.png') }}",
+            'warning': "{{ asset('bundles/pebvelib/img/velib-warning-25.png') }}",
+            'empty': "{{ asset('bundles/pebvelib/img/velib-empty-25.png') }}"
+        };
+
+        var coord = {
+            'lat':{{ coord['lat'] }},
+            'lng' :{{ coord['lng'] }}
+        };
+
+        var stations = [
+            {% for station in stations %}
+            {
+                name: "{{ station.name }}",
+                lastAvailableBikes: {{ station.lastAvailableBikes }},
+                positionLat: {{ station.positionLat }},
+                positionLng : {{ station.positionLng  }},
+
+            },
+            {% endfor %}
+        ];
+
+        var rootPath = '{{ path('peb_velib_default_index') }}';
+
+    </script>
+
+    {% javascripts '@pebvelibBundle/Resources/public/js/stations.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

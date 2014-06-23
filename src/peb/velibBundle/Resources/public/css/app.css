@@ -1,0 +1,62 @@
+body {
+    font-size: 14px;
+    margin-top: 32px;
+}
+
+.dayPart {
+    margin-top: 15px;
+}
+
+.stations {
+    padding: 0 0 0 0;
+    margin: 3em 0;
+}
+
+.station {
+    background: #1f8dd6;
+    padding: 0.3em 1em;
+    margin: 1em 1em;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.station.success {
+    background: #1f8dd6;
+}
+
+.station.warning {
+    background: #5eb95e;
+}
+
+.station.empty {
+    background: #dd514c;
+}
+
+.station.outOfOrder {
+    background: rgb(128, 88, 165);
+}
+
+.station:not(.display) .chart {
+    display: none;
+}
+
+.station .chart {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.map {
+    margin: 1em 0;
+}
+
+.map-canvas {
+    margin: 1em;
+    height: 435px;
+}
+
+.firstHeading{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+}

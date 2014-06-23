@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="pebvelib.update.class">peb\velibBundle\Service\UpdateService</parameter>
+        <parameter key="pebvelib.dashboard.class">peb\velibBundle\Service\DashboardService</parameter>
+        <parameter key="pebvelib.api.class">peb\velibBundle\Service\ApiService</parameter>
+    </parameters>
+
+    <services>
+        <service id="pebvelib.update" class="%pebvelib.update.class%">
+            <argument type="service" id="doctrine.orm.entity_manager"/>
+            <argument>%pebvelib.jcdecault_api_key%</argument>
+        </service>
+        <service id="pebvelib.dashboard" class="%pebvelib.dashboard.class%">
+            <argument type="service" id="doctrine.orm.default_entity_manager"/>
+            <argument type="service" id="templating"/>
+            <argument>%pebvelib.google_api_key%</argument>
+            <argument>%pebvelib.coord.matin%</argument>
+            <argument>%pebvelib.coord.soir%</argument>
+        </service>
+        <service id="pebvelib.api" class="%pebvelib.api.class%">
+            <argument type="service" id="doctrine.orm.default_entity_manager"/>
+        </service>
+
+    </services>
+
+</container>

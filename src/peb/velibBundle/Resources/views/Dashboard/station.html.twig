@@ -1,0 +1,10 @@
+<li class="pure-g station
+                {%  if station.lastAvailableBikes >= 3 %}success
+                {% elseif station.lastAvailableBikes >= 1%}warning
+                {% elseif station.lastAvailableBikes ==0 %}empty{% endif %}" data-number="{{ station.number }}">
+    <div class="pure-u-1-5 status"><p>{{ station.lastAvailableBikes }} vélo(s)</p></div>
+    <div class="pure-u-4-5 adress"><p>{{ station.address }}</p></div>
+    <div class="pure-u-1 chart">
+            Un graphique doit se charger ici !
+    </div>
+</li>
