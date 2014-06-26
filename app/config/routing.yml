@@ -1,3 +1,8 @@
+pebHome:
+    resource: "@pebHomeBundle/Controller/"
+    type: annotation
+    prefix: /
+
 pebvelib:
     resource: "@pebvelibBundle/Controller/"
     type:     annotation

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>PebLabs</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        <!-- --------------- -->
+        <!--        CSS      -->
+        <!-- --------------- -->
+        {% stylesheets
+            'bundles/pebhome/vendor/pure-min.css'
+            'bundles/pebhome/vendor/font-awesome-4.1.0/css/font-awesome.css'
+            'bundles/pebhome/css/app.css'
+            filter='cssrewrite'
+            output="css/compiled/base.css"
+        %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <!--<![endif]-->
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+        <body>
+        <header>
+            {{ include('pebHomeBundle::menu.html.twig', {'type': type}) }}
+        </header>
+
+    {% block body %}{% endblock %}
+
+    <!-- --------------- -->
+    <!--    Javascript   -->
+    <!-- --------------- -->
+    {% javascripts
+    '@pebHomeBundle/Resources/public/vendor/jquery-1.11.1.min.js'
+    %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    {% block javascript %}
+    {% endblock %}
+
+    </body>
+</html>
