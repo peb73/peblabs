@@ -16,7 +16,17 @@ class HomeController extends Controller{
     /**
      * @Route("/")
      */
-    public function indexAction()
+    public function homeAction()
+    {
+        $response = $this->forward('pebBlogBundle:Blog:articles', array());
+
+        return $response;
+    }
+
+    /**
+     * @Route("/lab")
+     */
+    public function labAction()
     {
         return new Response($this->get('pebHome.home')->action());
     }

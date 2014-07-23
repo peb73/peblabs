@@ -1,0 +1,20 @@
+<section class="post">
+    <header class="post-header">
+        <!--<img class="post-avatar" alt="Tilo Mitra&#x27;s avatar" height="48" width="48" src="/img/common/tilo-avatar.png">-->
+
+        <h2 class="post-title">{{ article.title }}</h2>
+
+        <p class="post-meta">
+            Le {{ article.postDate | date('d/m/Y') }} sous
+            {% for tag in article.tags %}
+                {{ include('pebBlogBundle:Blog:tag.html.twig', {'tag': tag}) }}
+            {% endfor %}
+        </p>
+    </header>
+
+    <div class="post-description">
+        <p>
+            {{ article.text }}
+        </p>
+    </div>
+</section>

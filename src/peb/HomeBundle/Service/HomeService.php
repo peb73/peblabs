@@ -31,7 +31,7 @@ class HomeService {
      */
     public function action()
     {
-        return $this->twigEngine->render('pebHomeBundle:Home:home.html.twig', array('type'=>'home'));
+        return $this->twigEngine->render('pebHomeBundle:Home:home.html.twig', array('type'=>'lab'));
     }
 
 } 

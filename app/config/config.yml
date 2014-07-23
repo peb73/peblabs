@@ -69,3 +69,11 @@ pebvelib:
    soir:
        lat: 48.8746882
        lng: 2.4072987
+
+swiftmailer:
+    disable_delivery:     true
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: peb\HomeBundle\Entity\User

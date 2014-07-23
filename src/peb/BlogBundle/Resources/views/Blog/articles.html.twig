@@ -1,0 +1,43 @@
+{% extends 'pebHomeBundle::base.html.twig' %}
+
+{% block body %}
+
+    <div id="layout" class="blog pure-g">
+
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+<!--
+            <div class="header">
+                <hgroup>
+                    <h1 class="brand-title">A Sample Blog</h1>
+                    <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+                </hgroup>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="pure-button" href="http://purecss.io">Pure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+-->
+        </div>
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+
+            <div class="posts">
+                <!-- <h1 class="content-subhead">Recent Posts</h1> -->
+
+                {% for article in articles %}
+                    {{ include('pebBlogBundle:Blog:article.html.twig', {'article': article}) }}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

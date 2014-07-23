@@ -1,7 +1,7 @@
 <div class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-    <a href="{{ path('peb_home_home_index') }}" class="pure-menu-heading">PebLabs</a>
+    <a href="{{ path('peb_home_home_home') }}" class="pure-menu-heading">PebLabs</a>
     <ul>
-        <li {%  if type == 1 %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_home_home_index') }}">Accueil</a></li>
-        <li {%  if type == 1 %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_home_home_index') }}">Blog</a></li>
+        <li {%  if type == 'blog' %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_blog_blog_articles') }}">Blog</a></li>
+        <li {%  if type == 'lab' %}class="pure-menu-selected"{% endif %}><a href="{{ path('peb_home_home_lab') }}">Lab</a></li>
     </ul>
 </div>
