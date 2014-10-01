@@ -36,11 +36,11 @@ class Category {
     private $name;
 
     /**
-     * @var key
+     * @var string
      *
-     * @ORM\Column(name="key", type="string", length=255)
+     * @ORM\Column(name="urlName", type="string", length=255)
      */
-    private $key;
+    private $urlName;
 
     /**
      * @var ArrayCollection
@@ -81,7 +81,7 @@ class Category {
     public function setName($name)
     {
         $this->name = $name;
-        $this->key = urlencode($name);
+        $this->urlName = urlencode($name);
 
         return $this;
     }
@@ -89,9 +89,9 @@ class Category {
     /**
      * @return string
      */
-    public function getKey()
+    public function getUrlName()
     {
-        return $this->key;
+        return $this->urlName;
     }
 
     /**

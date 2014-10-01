@@ -21,9 +21,9 @@ class CategoryTest extends WebTestCase{
     {
         $category = new Category();
         $category->setName('plop');
-        $this->assertEquals('plop',$category->getKey());
+        $this->assertEquals('plop',$category->getUrlName());
 
         $category->setName('plop plop é à');
-        $this->assertEquals('plop+plop+%C3%A9+%C3%A0',$category->getKey());
+        $this->assertEquals('plop+plop+%C3%A9+%C3%A0',$category->getUrlName());
     }
 }
