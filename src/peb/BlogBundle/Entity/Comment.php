@@ -2,6 +2,7 @@
 
 namespace peb\BlogBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use peb\HomeBundle\Entity\User;
 /**
@@ -54,11 +55,22 @@ class Comment
     /**
      * @var Comment
      *
-     * @ORM\OneToOne(targetEntity="Comment")
+     * @ORM\ManyToOne(targetEntity="Comment", inversedBy="childs")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
      */
     private $parent;
 
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="parent")
+     */
+    private $childs;
+
+    public function __construct()
+    {
+        $this->childs = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -117,6 +129,25 @@ class Comment
     }
 
     /**
+     * @param Article $article
+     * @return $this
+     */
+    public function setArticle($article)
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    /**
+     * @return Article
+     */
+    public function getArticle()
+    {
+        return $this->article;
+    }
+
+    /**
      * Get User
      *
      * @return User;
@@ -158,4 +189,25 @@ class Comment
 
         return $this;
     }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getChilds()
+    {
+        return $this->childs;
+    }
+
+    /**
+     * @param Comment $comment
+     * @return $this
+     */
+    public function addChilds(Comment $comment)
+    {
+        $this->childs->add($comment);
+
+        return $this;
+    }
 }
+
+

@@ -76,6 +76,14 @@ class Article
      */
     private $comments;
 
+    /**
+     * @var Category
+     *
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="articles")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id", nullable=true)
+     */
+    private $category;
+
     public function __construct(){
         $this->comments = new ArrayCollection();
         $this->creationDate = new \DateTime('now');
@@ -250,6 +258,25 @@ class Article
     public function addComment(Comment $comment)
     {
         $this->comments->add($comment);
+
+        return $this;
+    }
+
+    /**
+     * @return Category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param Category $category
+     * @return $this;
+     */
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
 
         return $this;
     }
