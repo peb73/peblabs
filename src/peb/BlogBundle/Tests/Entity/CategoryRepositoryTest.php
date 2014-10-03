@@ -26,4 +26,18 @@ class CategoryRepositoryTest extends WebTestCase{
         $this->assertEquals(4, sizeof($categories));
     }
 
+    /**
+     * Test find by url
+     */
+    public function testFindByUrl()
+    {
+        $client = static::createClient();
+        $em = $client->getContainer()->get('doctrine.orm.entity_manager');
+
+        $categoryRepository = $em->getRepository('pebBlogBundle:Category');
+        $category = $categoryRepository->findByUrl('cat-2');
+
+        $this->assertEquals('cat-2',$category->getUrlName());
+    }
+
 } 

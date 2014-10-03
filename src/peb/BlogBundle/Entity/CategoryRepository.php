@@ -31,4 +31,23 @@ class CategoryRepository extends EntityRepository{
         return $query
             ->getResult();
     }
+
+    /**
+     * @param string $urlName
+     * @return null | Category
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     */
+    public  function findByUrl($urlName)
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery(
+            'select c from pebBlogBundle:Category c'
+            .' where c.urlName = :urlName'
+        );
+
+        return $query
+            ->setParameter('urlName', $urlName)
+            ->getOneOrNullResult();
+    }
 } 
