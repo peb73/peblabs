@@ -28,61 +28,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Article.php">
+      <file leaf-file-name="CategoryRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.833333" vertical-offset="3835" max-vertical-offset="4335">
-              <caret line="281" column="5" selection-start-line="281" selection-start-column="5" selection-end-line="281" selection-end-column="5" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="510">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding>
-                <element signature="e#41#89#0#PHP" expanded="true" />
+                <marker date="1412373952000" expanded="true" signature="469:540" placeholder="select c fro..pebBlogBundle..." />
+                <marker date="1412373952000" expanded="true" signature="469:543" placeholder="select c fro..pebBlogBundle..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleRepositoryTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/ArticleRepositoryTest.php">
+      <file leaf-file-name="ArticleService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Service/ArticleService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
+            <state vertical-scroll-proportion="-17.5" vertical-offset="360" max-vertical-offset="930">
+              <caret line="52" column="23" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="23" />
+              <folding>
+                <element signature="e#42#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/tag.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="121" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryTest.php">
+      <file leaf-file-name="category.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/category.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="435">
-              <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-              <folding>
-                <element signature="e#146#181#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.06" vertical-offset="0" max-vertical-offset="500">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/ArticleRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.0" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-              <folding>
-                <element signature="e#41#89#0#PHP" expanded="true" />
-                <marker date="1412112864000" expanded="true" signature="456:800" placeholder="select a fro..pebBlogBundle..." />
-                <marker date="1412112864000" expanded="true" signature="1004:1063" placeholder="SELECT p FRO..AcmeStoreBundle..." />
-                <marker date="1412112864000" expanded="true" signature="1292:1411" placeholder="select a fro..pebBlogBundle..." />
-                <marker date="1412112864000" expanded="true" signature="1793:1940" placeholder="select a fro..pebBlogBundle..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Category.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.77" vertical-offset="330" max-vertical-offset="1740">
-              <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+            <state vertical-scroll-proportion="-8.125" vertical-offset="330" max-vertical-offset="1740">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="e#139#187#0#PHP" expanded="true" />
               </folding>
@@ -90,58 +85,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Comment.php">
+      <file leaf-file-name="articles.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/articles.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.2083335" vertical-offset="685" max-vertical-offset="3285">
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="60" selection-end-column="20" />
-              <folding>
-                <element signature="e#41#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadArticleData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/DataFixtures/ORM/LoadArticleData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1980">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding>
-                <element signature="e#52#101#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FixtureInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/FixtureInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="405">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state vertical-scroll-proportion="8.541667" vertical-offset="355" max-vertical-offset="855">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadCategoryData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/DataFixtures/ORM/LoadCategoryData.php">
+      <file leaf-file-name="CategoryRepositoryTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryRepositoryTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="435">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Controller/BlogController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.583333" vertical-offset="265" max-vertical-offset="765">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
-                <element signature="e#6#103#0#PHP" expanded="true" />
+                <element signature="e#144#201#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/article.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="375">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/peb/velibBundle/Controller/ApiController.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/peb/velibBundle/Entity/StationRepository.php" />
         <option value="$PROJECT_DIR$/src/peb/HomeBundle/pebHomeBundle.php" />
         <option value="$PROJECT_DIR$/src/peb/velibBundle/Controller/DefaultController.php" />
@@ -184,8 +172,6 @@
         <option value="$PROJECT_DIR$/src/peb/HomeBundle/Resources/views/menu.html.twig" />
         <option value="$PROJECT_DIR$/src/peb/HomeBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/peb/HomeBundle/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/articles.html.twig" />
-        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Admin/home.html.twig" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/article.html.twig" />
@@ -193,20 +179,25 @@
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/tag.html.twig" />
         <option value="$PROJECT_DIR$/app/phpunit.xml.dist" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/ArticleRepositoryTest.php" />
-        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Service/ArticleService.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/ArticleRepository.php" />
         <option value="$PROJECT_DIR$/app/config/parameter.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Composer/ScriptHandler.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/router_dev.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/Comment.php" />
-        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/Article.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/DataFixtures/ORM/LoadArticleData.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/DataFixtures/ORM/LoadCategoryData.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/Category.php" />
         <option value="$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryTest.php" />
+        <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/ArticleRepositoryTest.php" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryRepositoryTest.php" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Service/ArticleService.php" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/articles.html.twig" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Controller/BlogController.php" />
+        <option value="$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/category.html.twig" />
       </list>
     </option>
   </component>
@@ -354,6 +345,126 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peblabs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="peb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,45 +690,12 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/peb/HomeBundle/Resources/public/vendor/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/HomeBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Service/ApiService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="900">
-          <caret line="22" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/velibBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="18" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="13" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/HomeBundle/Service/HomeService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="555">
@@ -716,31 +794,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/article.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="375">
-          <caret line="10" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/HomeBundle/Resources/public/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4560" max-vertical-offset="5535">
           <caret line="342" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/articles.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/tag.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="665">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -770,14 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Service/ArticleService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="765">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -836,14 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
@@ -878,46 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CommentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="315">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/ArticleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding>
-            <element signature="e#41#89#0#PHP" expanded="true" />
-            <marker date="1412112864000" expanded="true" signature="456:800" placeholder="select a fro..pebBlogBundle..." />
-            <marker date="1412112864000" expanded="true" signature="1004:1063" placeholder="SELECT p FRO..AcmeStoreBundle..." />
-            <marker date="1412112864000" expanded="true" signature="1292:1411" placeholder="select a fro..pebBlogBundle..." />
-            <marker date="1412112864000" expanded="true" signature="1793:1940" placeholder="select a fro..pebBlogBundle..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2083335" vertical-offset="685" max-vertical-offset="3285">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="e#41#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/FixtureInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="405">
@@ -941,7 +943,7 @@
         <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1980">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#52#101#0#PHP" expanded="true" />
+            <element signature="e#52#101#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -956,14 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/ArticleRepositoryTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="435">
@@ -974,13 +968,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2083335" vertical-offset="685" max-vertical-offset="3285">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="60" selection-end-column="20" />
+          <folding>
+            <element signature="e#41#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/ArticleRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="585" max-vertical-offset="1395">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="e#41#89#0#PHP" expanded="true" />
+            <marker date="1412112864000" expanded="true" signature="-1:-1" placeholder="select a fro..pebBlogBundle..." />
+            <marker date="1412112864000" expanded="true" signature="-1:-1" placeholder="SELECT p FRO..AcmeStoreBundle..." />
+            <marker date="1412112864000" expanded="true" signature="-1:-1" placeholder="select a fro..pebBlogBundle..." />
+            <marker date="1412112864000" expanded="true" signature="-1:-1" placeholder="select a fro..pebBlogBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CommentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="315">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/ArticleRepositoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="480">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Tests/Entity/CategoryRepositoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="435">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Service/ArticleService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5" vertical-offset="360" max-vertical-offset="930">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="e#42#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="510">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <marker date="1412373952000" expanded="true" signature="469:540" placeholder="select c fro..pebBlogBundle..." />
+            <marker date="1412373952000" expanded="true" signature="469:543" placeholder="select c fro..pebBlogBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Controller/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.583333" vertical-offset="265" max-vertical-offset="765">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="e#144#201#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/articles.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.541667" vertical-offset="355" max-vertical-offset="855">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/article.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="375">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/tag.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="300">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.77" vertical-offset="330" max-vertical-offset="1740">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="330" max-vertical-offset="1740">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="e#139#187#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/peb/BlogBundle/Resources/views/Blog/category.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06" vertical-offset="0" max-vertical-offset="500">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

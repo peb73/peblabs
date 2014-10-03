@@ -32,9 +32,17 @@ class BlogController extends Controller{
     }
 
     /**
+     * @Route("/blog/category/{category}")
+     */
+    public function articlesCategoryAction($category)
+    {
+        //TODO
+    }
+
+    /**
      * @Route("/blog/tag/{tag}")
      */
-    public function ArticlesTags($tag)
+    public function ArticlesTagsAction($tag)
     {
         //TODO
     }

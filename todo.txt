@@ -1,0 +1,7 @@
+TODOS :
+
+- affichage catégory
+- affichage page article
+- affichage detail article
+- affichage articles par category
+- affichage article par tags

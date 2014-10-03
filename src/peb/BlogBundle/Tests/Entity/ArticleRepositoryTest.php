@@ -8,7 +8,6 @@
 
 namespace peb\BlogBundle\Tests\Entity;
 
-
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ArticleRepositoryTest extends WebTestCase{
