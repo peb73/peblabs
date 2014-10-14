@@ -362,3 +362,53 @@ a.pure-button-primary {
     font-weight: 500;
     letter-spacing: 0.1em;
 }
+
+/* ---------------------------- */
+/*            Blog Header       */
+/* ---------------------------- */
+
+.blog .header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.blog .brand-title,
+.blog .brand-tagline {
+    margin: 0;
+}
+.blog .brand-title {
+    text-transform: uppercase;
+    color: #fff;
+}
+.blog .brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+
+.blog .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.blog .nav-item {
+    display: block;
+    /**display: inline;*/
+    zoom: 1;
+}
+.blog .nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+}
+.blog .nav-item a:hover,
+.blog .nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
