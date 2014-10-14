@@ -1,7 +1,10 @@
 TODOS :
 
+- découpage sidebar du reste du code + side bar dépendant catégory
+
 - affichage catégory
 - affichage page article
 - affichage detail article
 - affichage articles par category
 - affichage article par tags
+- affichage tags sidebar
