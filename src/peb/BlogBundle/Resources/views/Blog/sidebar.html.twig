@@ -1,0 +1,15 @@
+<div class="header">
+
+    <hgroup>
+        <h1 class="brand-title">PEBLabs Blog</h1>
+        <h2 class="brand-tagline">Just a geek inside</h2>
+    </hgroup>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            {% for category in categories %}
+                {{ include('pebBlogBundle:Blog:category.html.twig', {'category': category}) }}
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
