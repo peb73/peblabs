@@ -1,17 +1,5 @@
-{% extends 'pebBlogBundle:Blog:layout.html.twig' %}
-
-{% block sidebar %}
-    {{ peblabs_blog_sidebar() }}
-{% endblock %}
-
-{% block content %}
-    <div class="posts">
-        <!-- <h1 class="content-subhead">Recent Posts</h1> -->
-
-        {% for article in articles %}
-            {{ include('pebBlogBundle:Blog:article.html.twig', {'article': article}) }}
-        {% endfor %}
-
-    </div>
-
-{% endblock %}
+<div class="posts">
+    {% for article in articles %}
+        {{ include('pebBlogBundle:Blog:article.html.twig', {'article': article}) }}
+    {% endfor %}
+</div>

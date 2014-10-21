@@ -1,0 +1,8 @@
+{% extends 'pebBlogBundle:Blog:layout.html.twig' %}
+
+{% block content %}
+    <!--<h1 class="content-subhead">Recent Posts</h1>-->
+
+    {{ include('pebBlogBundle:Blog:articles.html.twig', {'articles': articles}) }}
+
+{% endblock %}

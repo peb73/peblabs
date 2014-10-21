@@ -85,4 +85,21 @@ class ArticleRepository extends EntityRepository{
             ->getResult();
     }
 
+    public function getPublishByCategoryUrl($categoryUrl)
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery(
+            'select a from pebBlogBundle:Article a'
+            .' join a.category c'
+            .' where a.status = :status'
+            .' and c.urlName = :url'
+            .' order by a.postDate'
+        );
+
+        return $query
+            ->setParameter('status', Article::PUBLISH)
+            ->setParameter('url', $categoryUrl)
+            ->getResult();
+    }
 } 

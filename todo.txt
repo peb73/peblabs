@@ -1,10 +1,9 @@
 TODOS :
 
-- découpage sidebar du reste du code + side bar dépendant catégory
-
-- affichage catégory
+- fil d'ariane
+- determiner le type de l'objet category dans l'extension twig
 - affichage page article
 - affichage detail article
-- affichage articles par category
 - affichage article par tags
-- affichage tags sidebar
+- affichage des tags dans la sidebar
+- occuper une page entière ;-)

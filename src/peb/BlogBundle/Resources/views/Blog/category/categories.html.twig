@@ -1,0 +1,12 @@
+{% extends 'pebBlogBundle:Blog:layout.html.twig' %}
+
+{% block sidebar %}
+     {{ peblabs_blog_sidebar(categoryUrl) }}
+{% endblock %}
+
+{% block content %}
+    {{ peblabs_blog_breadcrumb('category',categoryUrl) }}
+
+    {{ include('pebBlogBundle:Blog:articles.html.twig', {'articles': articles}) }}
+
+{% endblock %}

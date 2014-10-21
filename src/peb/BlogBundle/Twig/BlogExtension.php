@@ -57,22 +57,49 @@ class BlogExtension extends \Twig_Extension {
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction('peblabs_blog_sidebar', array($this,'getSideBar'),array('is_safe' => array('html')))
+            new \Twig_SimpleFunction('peblabs_blog_sidebar', array($this,'getSideBar'),array('is_safe' => array('html'))),
+            new \Twig_SimpleFunction('peblabs_blog_breadcrumb', array($this,'getBreadCrumb'),array('is_safe' => array('html')))
         );
     }
 
     /**
-     * @param Category $category
+     * @param $categoryUrl
      * @return string
      */
-    public function getSideBar(Category $category = null)
+    public function getSideBar($categoryUrl = null)
     {
         $categories = $this->categoryRepository->getAll();
 
-        return $this->environment->render('pebBlogBundle:Blog:sidebar.html.twig', array(
+        return $this->environment->render('pebBlogBundle:Blog/twig:sidebar.html.twig', array(
             'categories'=>$categories,
-            'category' => $category,
+            'categoryUrl' => $categoryUrl,
             'autoescape' => false
         ));
+    }
+
+    /**
+     * @param string $type
+     * @param string $categoryUrl
+     * @return string
+     */
+    public function getBreadCrumb($type,$categoryUrl)
+    {
+        switch($type)
+        {
+            case 'category':
+                return $this->environment->render('pebBlogBundle:Blog/twig/breadcrumb:category.html.twig', array(
+                    'categoryUrl' => $categoryUrl,
+                    'autoescape' => false
+                ));
+                break;
+            case 'tag':
+                //TODO
+                break;
+            case 'article':
+                //TODO
+                break;
+        }
+
+        return '';
     }
 }

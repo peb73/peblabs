@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: pierre-emmanueboiteau
+ * Date: 21/10/14
+ * Time: 22:30
+ */
 
 namespace peb\BlogBundle\Service;
 
@@ -7,7 +13,7 @@ use peb\BlogBundle\Entity\ArticleRepository;
 use peb\BlogBundle\Entity\CategoryRepository;
 use Symfony\Bridge\Twig\TwigEngine;
 
-class ArticleService {
+class CategoryService {
 
     /**
      * @var TwigEngine
@@ -35,16 +41,19 @@ class ArticleService {
     }
 
     /**
+     * @param string $category
      * @return string
      */
-    public function renderArticles()
+    public function renderArticles($categoryUrl)
     {
-        $articles = $this->articleRepository->getAllPublish();
+        //TODO change it
+        $articles = $this->articleRepository->getPublishByCategoryUrl($categoryUrl);
         $categories = $this->categoryRepository->getAll();
 
-        return $this->twigEngine->render('pebBlogBundle:Blog/article:articles.html.twig', array(
+        return $this->twigEngine->render('pebBlogBundle:Blog/category:categories.html.twig', array(
             'type'=>'blog',
-            'categories'=> $categories,
+            'categories' => $categories,
+            'categoryUrl' => $categoryUrl,
             'articles' => $articles
         ));
     }

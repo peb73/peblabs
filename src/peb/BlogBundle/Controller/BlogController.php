@@ -36,6 +36,7 @@ class BlogController extends Controller{
      */
     public function articlesCategoryAction($category)
     {
+        return new Response($this->get('pebblog.category')->renderArticles($category));
         //TODO
     }
 

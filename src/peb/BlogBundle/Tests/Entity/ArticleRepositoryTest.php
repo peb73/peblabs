@@ -29,4 +29,21 @@ class ArticleRepositoryTest extends WebTestCase{
         }
     }
 
+    /**
+     * Test find By Category Url
+     */
+    public function getFindPublishByCategoryUrl()
+    {
+        $client = static::createClient();
+        $em = $client->getContainer()->get('doctrine.orm.entity_manager');
+
+        $articleRepository = $em->getRepository('pebBlogBundle:Article');
+        $articles = $articleRepository->findPublishByCategoryUrl('cat-1');
+
+        $this->assertEquals(2, sizeof($articles));
+        foreach($articles as $article){
+            $this->assertEquals('cat-1',$article->getCategory()->getUrlName());
+        }
+    }
+
 } 

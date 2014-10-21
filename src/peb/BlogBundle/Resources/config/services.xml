@@ -6,11 +6,17 @@
 
     <parameters>
         <parameter key="pebBlog.article.class">peb\BlogBundle\Service\ArticleService</parameter>
+        <parameter key="pebBlog.category.class">peb\BlogBundle\Service\CategoryService</parameter>
         <parameter key="pebBlog.twig.blog_extension.class">peb\BlogBundle\Twig\BlogExtension</parameter>
     </parameters>
 
     <services>
         <service id="pebBlog.article" class="%pebBlog.article.class%">
+            <argument type="service" id="templating"/>
+            <argument type="service" id="doctrine.orm.default_entity_manager"/>
+        </service>
+
+        <service id="pebBlog.category" class="%pebBlog.category.class%">
             <argument type="service" id="templating"/>
             <argument type="service" id="doctrine.orm.default_entity_manager"/>
         </service>

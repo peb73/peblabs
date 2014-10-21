@@ -406,6 +406,7 @@ a.pure-button-primary {
     text-transform: uppercase;
     font-size: 85%;
 }
+.blog .nav-item a.focus,
 .blog .nav-item a:hover,
 .blog .nav-item a:focus {
     border: 2px solid rgb(61, 146, 201);
