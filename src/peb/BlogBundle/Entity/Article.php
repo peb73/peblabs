@@ -63,11 +63,12 @@ class Article
     private $status = Article::IN_CREATION;
 
     /**
-     * @var string
+     * @var ArrayCollection
      *
-     * @ORM\Column(name="tags", type="text")
+     * @ORM\ManyToMany(targetEntity="Tag", inversedBy="articles")
+     * @ORM\JoinTable(name="articles_tags")
      */
-    private $tags = "";
+    private $tags;
 
     /**
      * @var ArrayCollection
@@ -86,6 +87,7 @@ class Article
 
     public function __construct(){
         $this->comments = new ArrayCollection();
+        $this->tags = new ArrayCollection();
         $this->creationDate = new \DateTime('now');
     }
 
@@ -222,19 +224,16 @@ class Article
      */
     public function getTags()
     {
-        return explode(',', $this->tags);
+        return $this->tags;
     }
 
     /**
-     * Set tags
-     *
-     * @param array $tags
-     *
+     * @param Tag $tag
      * @return $this
      */
-    public function setTags($tags)
+    public function addTag(Tag $tag)
     {
-        $this->tags = implode(',', $tags);
+        $this->tags->add($tag);
 
         return $this;
     }

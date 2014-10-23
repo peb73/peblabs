@@ -20,7 +20,7 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('first title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('Node'))
+            ->addTag($this->getReference('tag-1'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-1'));
 
@@ -30,7 +30,7 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('Java'))
+            ->addTag($this->getReference('tag-2'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-2'));
 
@@ -40,7 +40,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'Javascript'))
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-4'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-3'));
 
@@ -50,7 +51,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'Javascript'))
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-4'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-4'));
 
@@ -60,7 +62,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'Javascript'))
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-4'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-1'));
 
@@ -70,7 +73,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'Javascript'))
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-4'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-2'));
 
@@ -80,7 +84,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'HTML'))
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-5'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-3'));
 
@@ -90,7 +95,7 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('HTML'))
+            ->addTag($this->getReference('tag-5'))
             ->setStatus(Article::PUBLISH)
             ->setCategory($this->getReference('cat-4'));
 
@@ -100,7 +105,6 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array())
             ->setStatus(Article::PUBLISH);
 
         $manager->persist($article);
@@ -110,7 +114,8 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
             ->setText("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             ->setTitle('second title')
             ->setPostDate(new \DateTime('now'))
-            ->setTags(array('CSS', 'Pure'));
+            ->addTag($this->getReference('tag-3'))
+            ->addTag($this->getReference('tag-6'));
 
         $manager->persist($article);
 
@@ -122,6 +127,6 @@ class LoadArticleData extends AbstractFixture implements OrderedFixtureInterface
      */
     public function getOrder()
     {
-        return 2;
+        return 3;
     }
 }
