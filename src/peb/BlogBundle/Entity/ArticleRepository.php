@@ -13,28 +13,25 @@ use Doctrine\ORM\EntityRepository;
 class ArticleRepository extends EntityRepository{
 
     /**
-     * @param $tag
+     * @param string $tagLabel
      *
      * @return ArrayCollection
      */
-    public function findByTag($tag)
+    public function findByTag($tagLabel)
     {
         $em = $this->getEntityManager();
 
         $query = $em->createQuery(
              ' select a from pebBlogBundle:Article a'
+            .' join a.tags t'
             .' WHERE a.status = :status'
-            .' AND ('
-            .'  a.tags LIKE \'%,'.$tag.'%,\''
-            .'  OR a.tags LIKE \''.$tag.',%\''
-            .'  OR a.tags LIKE \'%,'.$tag.'\''
-            .'  OR a.tags LIKE \''.$tag.'\''
-            .' )'
+            .' AND t.label = :tag'
             .' ORDER BY a.postDate DESC'
         );
 
         return $query
             ->setParameter('status', Article::PUBLISH)
+            ->setParameter('tag', $tagLabel)
             ->getResult();
 
         return $this->getEntityManager()

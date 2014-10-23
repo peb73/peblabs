@@ -24,8 +24,17 @@ class ArticleRepositoryTest extends WebTestCase{
         $articles = $articleRepository->findByTag('CSS');
 
         $this->assertEquals(5, sizeof($articles));
+
+        function is_in_tags($tagLabel,$tags){
+            foreach($tags as $tag){
+                if($tagLabel == $tag->getLabel())
+                    return true;
+            }
+            return false;
+        }
+
         foreach($articles as $article){
-            $this->assertTrue(in_array('CSS',$article->getTags()));
+            $this->assertTrue(is_in_tags('CSS',$article->getTags()));
         }
     }
 
