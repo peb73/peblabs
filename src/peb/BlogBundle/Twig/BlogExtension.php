@@ -63,32 +63,32 @@ class BlogExtension extends \Twig_Extension {
     }
 
     /**
-     * @param $categoryUrl
+     * @param $category
      * @return string
      */
-    public function getSideBar($categoryUrl = null)
+    public function getSideBar($category = null)
     {
         $categories = $this->categoryRepository->getAll();
 
         return $this->environment->render('pebBlogBundle:Blog/twig:sidebar.html.twig', array(
             'categories'=>$categories,
-            'categoryUrl' => $categoryUrl,
+            'category' => $category,
             'autoescape' => false
         ));
     }
 
     /**
      * @param string $type
-     * @param string $categoryUrl
+     * @param string $category
      * @return string
      */
-    public function getBreadCrumb($type,$categoryUrl)
+    public function getBreadCrumb($type,$category)
     {
         switch($type)
         {
             case 'category':
                 return $this->environment->render('pebBlogBundle:Blog/twig/breadcrumb:category.html.twig', array(
-                    'categoryUrl' => $categoryUrl,
+                    'category' => $category,
                     'autoescape' => false
                 ));
                 break;

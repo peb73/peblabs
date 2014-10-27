@@ -1,14 +1,14 @@
-{% if tag matches '{^[A-Da-d]}' %}
-    <a class="post-category post-category-ad" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
-{% elseif tag matches '{^[E-He-h]}' %}
-    <a class="post-category post-category-eh" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
-{% elseif tag matches '{^[I-Li-l]}' %}
-    <a class="post-category post-category-il" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
-{% elseif tag matches '{^[M-Pm-p]}' %}
-    <a class="post-category post-category-mp" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
-{% elseif tag matches '{^[Q-Tq-t]}' %}
-    <a class="post-category post-category-qt" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
-{% elseif tag matches '{^[U-Zu-z]}' %}
-    <a class="post-category post-category-uz" href="{{ path('peb_blog_blog_articlestags', {'tag': tag}) }}">{{ tag }}</a>
+{% if tag.label matches '{^[A-Da-d]}' %}
+    <a class="post-category post-category-ad" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
+{% elseif tag.label matches '{^[E-He-h]}' %}
+    <a class="post-category post-category-eh" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
+{% elseif tag.label matches '{^[I-Li-l]}' %}
+    <a class="post-category post-category-il" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
+{% elseif tag.label matches '{^[M-Pm-p]}' %}
+    <a class="post-category post-category-mp" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
+{% elseif tag.label matches '{^[Q-Tq-t]}' %}
+    <a class="post-category post-category-qt" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
+{% elseif tag.label matches '{^[U-Zu-z]}' %}
+    <a class="post-category post-category-uz" href="{{ path('peb_blog_blog_articlestags', {'tag': tag.label}) }}">{{ tag.label }}</a>
 {% endif %}
 

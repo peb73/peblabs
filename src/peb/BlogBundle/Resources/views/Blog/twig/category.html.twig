@@ -1,3 +1,3 @@
 <li class="nav-item">
-    <a class="pure-button {% if category.urlName == categoryUrl %}focus{% endif %}" href="{{ path('peb_blog_blog_articlescategory', {'category': category.urlName}) }}">{{ category.name }}</a>
+    <a class="pure-button {% if category != null and category.urlName == categoryList.urlName %}focus{% endif %}" href="{{ path('peb_blog_blog_articlescategory', {'categoryUrl': categoryList.urlName}) }}">{{ categoryList.name }}</a>
 </li>

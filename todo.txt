@@ -1,6 +1,5 @@
 TODOS :
 
-- model tag en base de donnée
 - operation de récupération d'une category en fonction de son url pour le lien dans le fil d'ariane
 - fil d'ariane
 - determiner le type de l'objet category dans l'extension twig

@@ -41,19 +41,20 @@ class CategoryService {
     }
 
     /**
-     * @param string $category
+     * @param string $categoryUrl
      * @return string
      */
     public function renderArticles($categoryUrl)
     {
         //TODO change it
-        $articles = $this->articleRepository->getPublishByCategoryUrl($categoryUrl);
+        $category = $this->categoryRepository->findByUrl($categoryUrl);
+        $articles = $this->articleRepository->getPublishByCategoryUrl($category->getUrlName());
         $categories = $this->categoryRepository->getAll();
 
         return $this->twigEngine->render('pebBlogBundle:Blog/category:categories.html.twig', array(
             'type'=>'blog',
             'categories' => $categories,
-            'categoryUrl' => $categoryUrl,
+            'category' => $category,
             'articles' => $articles
         ));
     }

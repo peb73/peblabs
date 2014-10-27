@@ -32,12 +32,11 @@ class BlogController extends Controller{
     }
 
     /**
-     * @Route("/blog/category/{category}")
+     * @Route("/blog/category/{categoryUrl}")
      */
-    public function articlesCategoryAction($category)
+    public function articlesCategoryAction($categoryUrl)
     {
-        return new Response($this->get('pebblog.category')->renderArticles($category));
-        //TODO
+        return new Response($this->get('pebblog.category')->renderArticles($categoryUrl));
     }
 
     /**
