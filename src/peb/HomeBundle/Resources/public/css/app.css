@@ -288,6 +288,21 @@ a.pure-button-primary {
 /*            Blog              */
 /* ---------------------------- */
 
+.blog {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    overflow: hidden;
+}
+
+.blog .sidebar{
+    overflow: auto;
+}
+
+.blog .content {
+    overflow: auto;
+}
+
 .blog .sidebar {
     background: rgb(61, 79, 93);
     color: #fff;
