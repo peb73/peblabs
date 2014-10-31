@@ -82,18 +82,21 @@ class BlogExtension extends \Twig_Extension {
      * @param string $category
      * @return string
      */
-    public function getBreadCrumb($type,$category)
+    public function getBreadCrumb($type,$value)
     {
         switch($type)
         {
             case 'category':
                 return $this->environment->render('pebBlogBundle:Blog/twig/breadcrumb:category.html.twig', array(
-                    'category' => $category,
+                    'category' => $value,
                     'autoescape' => false
                 ));
                 break;
             case 'tag':
-                //TODO
+                return $this->environment->render('pebBlogBundle:Blog/twig/breadcrumb:tag.html.twig',array(
+                   'tag' => $value,
+                    'autoescape' => false
+                ));
                 break;
             case 'article':
                 //TODO

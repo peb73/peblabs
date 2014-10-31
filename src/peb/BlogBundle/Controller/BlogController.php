@@ -44,7 +44,7 @@ class BlogController extends Controller{
      */
     public function ArticlesTagsAction($tag)
     {
-        //TODO
+        return new Response($this->get('pebblog.tag')->renderArticles($tag));
     }
 
 

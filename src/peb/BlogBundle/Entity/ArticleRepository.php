@@ -82,6 +82,10 @@ class ArticleRepository extends EntityRepository{
             ->getResult();
     }
 
+    /**
+     * @param string $categoryUrl
+     * @return array
+     */
     public function getPublishByCategoryUrl($categoryUrl)
     {
         $em = $this->getEntityManager();
@@ -99,4 +103,24 @@ class ArticleRepository extends EntityRepository{
             ->setParameter('url', $categoryUrl)
             ->getResult();
     }
+
+    /**
+     * @param string $tagLabel
+     * @return array
+     */
+    public function getPublishByTagLabel($tagLabel)
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery(
+            'select a from pebBlogBundle:Article a'
+            .' join a.tags t'
+            .' where t.label = :tagLabel'
+        );
+
+        return $query
+            ->setParameter('tagLabel', $tagLabel)
+            ->getResult();
+    }
+
 } 

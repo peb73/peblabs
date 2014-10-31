@@ -13,15 +13,15 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class CategoryRepositoryTest extends WebTestCase{
 
     /**
-     * Test find all
+     * Test get all
      */
-    public function testFindAll()
+    public function testGetAll()
     {
         $client = static::createClient();
         $em = $client->getContainer()->get('doctrine.orm.entity_manager');
 
         $categoryRepository = $em->getRepository('pebBlogBundle:Category');
-        $categories = $categoryRepository->findAll();
+        $categories = $categoryRepository->getAll();
 
         $this->assertEquals(4, sizeof($categories));
     }

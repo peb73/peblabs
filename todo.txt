@@ -1,8 +1,11 @@
 TODOS :
 
+- affichage des tags dans la sidebar
+- esi sidebar
+
 - fil d'ariane
 - affichage page article
 - affichage detail article
-- affichage article par tags
-- affichage des tags dans la sidebar
+
 - infinite scroll
+
