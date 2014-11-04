@@ -123,4 +123,24 @@ class ArticleRepository extends EntityRepository{
             ->getResult();
     }
 
+    /**
+     * @param $sha
+     * @return Article | null
+     *
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     */
+    public function getPublishByShaOne($sha)
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery(
+            'select a from pebBlogBundle:Article a'
+            .' where a.sha = :sha'
+        );
+
+        return $query
+            ->setParameter('sha', $sha)
+            ->getOneOrNullResult();
+    }
+
 } 

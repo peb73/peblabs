@@ -24,14 +24,6 @@ class BlogController extends Controller{
     }
 
     /**
-     * @Route("/blog/{id}", requirements={"id" = "\d+"})
-     */
-    public function articleAction($id)
-    {
-        //TODO
-    }
-
-    /**
      * @Route("/blog/category/{categoryUrl}")
      */
     public function articlesCategoryAction($categoryUrl)
@@ -47,5 +39,15 @@ class BlogController extends Controller{
         return new Response($this->get('pebblog.tag')->renderArticles($tag));
     }
 
+    /**
+     * @Route("/blog/{sha}", requirements={"sha" = "\w+"})
+     *
+     * @param string $sha
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function articleAction($sha)
+    {
+        return new Response($this->get('pebblog.article')->renderArticle($sha));
+    }
 
 } 

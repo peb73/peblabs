@@ -1,9 +1,7 @@
 TODOS :
 
+- 404
 - esi sidebar
-- fil d'ariane
-- affichage page article
-- affichage detail article
-
+- clean css
 - infinite scroll
 

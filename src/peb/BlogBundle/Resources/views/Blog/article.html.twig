@@ -2,7 +2,7 @@
     <header class="post-header">
         <!--<img class="post-avatar" alt="Tilo Mitra&#x27;s avatar" height="48" width="48" src="/img/common/tilo-avatar.png">-->
 
-        <h2 class="post-title">{{ article.title }}</h2>
+        <h2 class="post-title"><a href="{{ path('peb_blog_blog_article', {'sha':article.sha}) }}">{{ article.title }}</a></h2>
 
         <p class="post-meta">
             Le {{ article.postDate | date('d/m/Y') }} sous

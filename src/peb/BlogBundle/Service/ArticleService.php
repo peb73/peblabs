@@ -41,12 +41,24 @@ class ArticleService {
     public function renderArticles()
     {
         $articles = $this->articleRepository->getAllPublish();
-        $categories = $this->categoryRepository->getAll();
 
         return $this->twigEngine->render('pebBlogBundle:Blog/article:articles.html.twig', array(
             'type'=>'blog',
-            'categories'=> $categories,
             'articles' => $articles
+        ));
+    }
+
+    /**
+     * @param string $sha
+     * @return string
+     */
+    public function renderArticle($sha){
+
+        $article = $this->articleRepository->getPublishByShaOne($sha);
+
+        return $this->twigEngine->render('pebBlogBundle:Blog/article:article.html.twig',array(
+            'type'=>'blog',
+            'article' => $article
         ));
     }
 } 

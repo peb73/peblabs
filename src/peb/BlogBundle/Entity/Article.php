@@ -37,6 +37,13 @@ class Article
     /**
      * @var string
      *
+     * @ORM\Column(name="sha", type="string", length=255)
+     */
+    private $sha;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="text", type="text")
      */
     private $text;
@@ -110,6 +117,7 @@ class Article
     public function setTitle($title)
     {
         $this->title = $title;
+        $this->sha = sha1(date('now').$title);
 
         return $this;
     }
@@ -122,6 +130,16 @@ class Article
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Get sha
+     *
+     * @return string
+     */
+    public function getSha()
+    {
+        return $this->sha;
     }
 
     /**

@@ -108,7 +108,10 @@ class BlogExtension extends \Twig_Extension {
                 ));
                 break;
             case 'article':
-                //TODO
+                return $this->environment->render('pebBlogBundle:Blog/twig/breadcrumb:article.html.twig',array(
+                    'article' => $value,
+                    'autoescape' => false
+                ));
                 break;
         }
 

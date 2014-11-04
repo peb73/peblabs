@@ -1,0 +1,9 @@
+{% extends 'pebBlogBundle:Blog:layout.html.twig' %}
+
+{% block content %}
+    {{ peblabs_blog_breadcrumb('article',article) }}
+
+    <div class="posts">
+        {{ include('pebBlogBundle:Blog:article.html.twig', {'article': article}) }}
+    </div>
+{% endblock %}

@@ -316,6 +316,12 @@ a.pure-button-primary {
     color: #222;
     margin-bottom: 0.2em;
 }
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .post-avatar {
     border-radius: 50px;
     float: right;
@@ -376,6 +382,10 @@ a.pure-button-primary {
     font-size: 80%;
     font-weight: 500;
     letter-spacing: 0.1em;
+}
+
+.blog .content-subhead a {
+    color: inherit;
 }
 
 /* ---------------------------- */
