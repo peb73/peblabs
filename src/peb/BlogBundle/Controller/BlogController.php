@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Response;
 class BlogController extends Controller{
 
     /**
-     * @Route("/blog")
+     * @Route("/blog/")
      */
     public function articlesAction()
     {

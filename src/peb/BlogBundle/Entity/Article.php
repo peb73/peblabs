@@ -117,7 +117,7 @@ class Article
     public function setTitle($title)
     {
         $this->title = $title;
-        $this->sha = sha1(date('now').$title);
+        $this->sha = sha1(microtime().$title);
 
         return $this;
     }
