@@ -11,6 +11,7 @@ namespace peb\BlogBundle\Twig;
 use Doctrine\ORM\EntityManager;
 use peb\BlogBundle\Entity\Category;
 use peb\BlogBundle\Entity\CategoryRepository;
+use peb\BlogBundle\Entity\TagRepository;
 use \Twig_Environment;
 
 class BlogExtension extends \Twig_Extension {
@@ -26,11 +27,17 @@ class BlogExtension extends \Twig_Extension {
     private $categoryRepository;
 
     /**
+     * @var TagRepository
+     */
+    private $tagRepository;
+
+    /**
      * @param EntityManager $em
      */
     public function __construct(EntityManager $em)
     {
         $this->categoryRepository = $em->getRepository('pebBlogBundle:Category');
+        $this->tagRepository = $em->getRepository('pebBlogBundle:Tag');
     }
 
     /**
@@ -69,10 +76,12 @@ class BlogExtension extends \Twig_Extension {
     public function getSideBar($category = null)
     {
         $categories = $this->categoryRepository->getAll();
+        $tags = $this->tagRepository->getAll();
 
         return $this->environment->render('pebBlogBundle:Blog/twig:sidebar.html.twig', array(
             'categories'=>$categories,
             'category' => $category,
+            'tags' => $tags,
             'autoescape' => false
         ));
     }

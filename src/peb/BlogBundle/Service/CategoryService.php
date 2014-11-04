@@ -11,6 +11,7 @@ namespace peb\BlogBundle\Service;
 use Doctrine\ORM\EntityManager;
 use peb\BlogBundle\Entity\ArticleRepository;
 use peb\BlogBundle\Entity\CategoryRepository;
+use peb\BlogBundle\Entity\TagRepository;
 use Symfony\Bridge\Twig\TwigEngine;
 
 class CategoryService {

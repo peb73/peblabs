@@ -11,5 +11,10 @@
                 {{ include('pebBlogBundle:Blog/twig:category.html.twig', {'category': category,'categoryList': categoryList}) }}
             {% endfor %}
         </ul>
+        <ul class="nav-list">
+            {% for tag in tags %}
+                <li class="nav-item-tag">{{ include('pebBlogBundle:Blog:tag.html.twig', {'tag': tag}) }}</li>
+            {% endfor %}
+        </ul>
     </nav>
 </div>

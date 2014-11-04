@@ -1,8 +1,6 @@
 TODOS :
 
-- affichage des tags dans la sidebar
 - esi sidebar
-
 - fil d'ariane
 - affichage page article
 - affichage detail article

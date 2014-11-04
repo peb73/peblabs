@@ -406,7 +406,19 @@ a.pure-button-primary {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 1em;
 }
+
+.blog .nav-item-tag {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.blog .nav-item-tag a {
+    display: inline-block;
+    //margin-top: 1em;
+}
+
 .blog .nav-item {
     display: block;
     /**display: inline;*/
