@@ -293,6 +293,8 @@ a.pure-button-primary {
     top: 15px;
     bottom: 15px;
     overflow: hidden;
+    left: 0;
+    right: 0;
 }
 
 .blog .sidebar{
@@ -386,6 +388,11 @@ a.pure-button-primary {
 
 .blog .content-subhead a {
     color: inherit;
+}
+
+.blog .p404 {
+    text-align: center;
+    padding-top: 300px;
 }
 
 /* ---------------------------- */

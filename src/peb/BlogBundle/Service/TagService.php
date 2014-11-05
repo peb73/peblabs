@@ -59,6 +59,12 @@ class TagService {
         $categories = $this->categoryRepository->getAll();
         $tag = $this->tagRepository->findByLabel($tagLabel);
 
+        if($tag == null){
+            return $this->twigEngine->render('pebBlogBundle:Blog:404.html.twig',array(
+                'type'=>'blog',
+            ));
+        }
+
         return $this->twigEngine->render('pebBlogBundle:Blog/tag:tags.html.twig', array(
             'type'=>'blog',
             'categories' => $categories,

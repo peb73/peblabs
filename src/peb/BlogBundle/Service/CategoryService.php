@@ -47,8 +47,13 @@ class CategoryService {
      */
     public function renderArticles($categoryUrl)
     {
-        //TODO change it
         $category = $this->categoryRepository->findByUrl($categoryUrl);
+        if($category == null){
+            return $this->twigEngine->render('pebBlogBundle:Blog:404.html.twig',array(
+                'type'=>'blog',
+            ));
+        }
+
         $articles = $this->articleRepository->getPublishByCategoryUrl($category->getUrlName());
         $categories = $this->categoryRepository->getAll();
 

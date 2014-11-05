@@ -55,6 +55,11 @@ class ArticleService {
     public function renderArticle($sha){
 
         $article = $this->articleRepository->getPublishByShaOne($sha);
+        if($article == null){
+            return $this->twigEngine->render('pebBlogBundle:Blog:404.html.twig',array(
+                'type'=>'blog',
+            ));
+        }
 
         return $this->twigEngine->render('pebBlogBundle:Blog/article:article.html.twig',array(
             'type'=>'blog',
